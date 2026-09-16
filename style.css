@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #14121a;
+  font-family: "Comic Sans MS", "Segoe UI", Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+}
+
+#game-container {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #14121a;
+}
+
+#game-canvas {
+  display: block;
+  background: #14121a;
+  cursor: default;
+  image-rendering: auto;
+}
+
+/* Sembunyikan scrollbar di semua browser */
+body::-webkit-scrollbar { display: none; }
+body { -ms-overflow-style: none; scrollbar-width: none; }
